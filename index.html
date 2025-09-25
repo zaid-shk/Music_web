@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Web</title>
+    <link
+      rel="shortcut icon"
+      href="/imgs/Style=Outline.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="m-0 p-0 box-border overflow-x-hidden h-full w-full bg-gray-900">
+    <div class="bg-gray-900">
+      <!-- Desktop Nav Bar -->
+      <div
+        class="nav lg:flex hidden md:hidden h-15 justify-between mr-10 ml-10 pt-8"
+      >
+        <div class="img">
+          <img src="/imgs/Style=Default.svg" alt="" class="w-8 ml-5" />
+        </div>
+        <div class="links flex space-x-9 ml-[15rem] text-white">
+          <a href="#Music" class="hover:text-yellow-500 hover:border-b-2"
+            >Music</a
+          >
+          <a href="#Podcast" class="hover:text-yellow-500 hover:border-b-2"
+            >Podcast</a
+          >
+          <a href="#Concerts" class="hover:text-yellow-500 hover:border-b-2"
+            >Concerts</a
+          >
+        </div>
+        <div
+          class="search ml-[10rem] bg-gray-200 w-1/5 flex items-center rounded-md"
+        >
+          <input
+            type="text"
+            placeholder="Search"
+            class="ml-2 rounded-md outline-none w-55 p-1"
+          />
+          <i class="ri-search-line text-2xl"></i>
+        </div>
+        <div class="not text-gray-200 ml-10 flex space-x-6 text-2xl">
+          <i class="ri-heart-line hover:text-yellow-500 cursor-pointer"></i>
+          <i
+            class="ri-notification-3-line hover:text-yellow-500 cursor-pointer"
+          ></i>
+        </div>
+        <div class="profile ml-10 flex items-center">
+          <img
+            src="/imgs/atif-aslam.jpg"
+            alt=""
+            class="w-10 h-10 rounded-full"
+          />
+          <h3 class="text-gray-200 ml-5">UserName</h3>
+        </div>
+      </div>
+      <!-- Mobile Nav Bar -->
+      <div
+        class="mobile-nav fixed bottom-0 left-0 right-0 h-16 w-full bg-gray-800 flex items-center justify-around lg:hidden md:hidden"
+      >
+        <a href="#Music" class="flex flex-col items-center text-gray-200">
+          <i class="ri-music-2-line text-2xl"></i>
+          <span class="text-xs">Music</span>
+        </a>
+        <a href="#Podcast" class="flex flex-col items-center text-gray-200">
+          <i class="ri-mic-line text-2xl"></i>
+          <span class="text-xs">Podcast</span>
+        </a>
+        <a href="#Concerts" class="flex flex-col items-center text-gray-200">
+          <i class="ri-calendar-event-line text-2xl"></i>
+          <span class="text-xs">Concerts</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-gray-200">
+          <i class="ri-search-line text-2xl"></i>
+          <span class="text-xs">Search</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-gray-200">
+          <i class="ri-user-line text-2xl"></i>
+          <span class="text-xs">Profile</span>
+        </a>
+      </div>
+      <div
+        class="inmain grid lg:mt-3 md:mt-3 w-screen h-screen lg:grid-cols-[15vw_60vw_25vw] md:grid-cols-[15vw_60vw_25vw] grid-cols-[100vw]"
+      >
+        <div
+          class="sidebar hidden lg:flex md:flex flex-col gap-6 text-lg pl-6 pt-5 text-white"
+        >
+          <a href="#Home" class="hover:text-yellow-500 hover:border-r-2">
+            <i class="ri-home-2-line"></i> Home</a
+          >
+          <a href="#Discover" class="hover:text-yellow-500 hover:border-r-2">
+            <i class="ri-compass-line"></i> Discover</a
+          >
+          <a href="#Radio" class="hover:text-yellow-500 hover:border-r-2"
+            ><i class="ri-rfid-line"></i> Radio</a
+          >
+          <a href="#Albums" class="hover:text-yellow-500 hover:border-r-2"
+            ><i class="ri-book-shelf-line"></i> Albums</a
+          >
+          <a href="#Podcast" class="hover:text-yellow-500 hover:border-r-2"
+            ><i class="ri-mic-line"></i> Podcast</a
+          >
+          <h3>Library</h3>
+          <a href="#Recent" class="hover:text-yellow-500 hover:border-r-2"
+            ><i class="ri-history-line"></i> Recent</a
+          >
+          <a href="#Favorite" class="hover:text-yellow-500 hover:border-r-2">
+            <i class="ri-heart-line"></i> Favorite</a
+          >
+          <a href="#Local Files" class="hover:text-yellow-500 hover:border-r-2"
+            ><i class="ri-folders-line"></i> Local Files</a
+          >
+        </div>
+        <div class="main">
+          <div class="poster flex justify-center mt-3">
+            <img
+              src="/imgs/ConcertV.jpg"
+              alt=""
+              class="rounded-md lg:h-80 lg:w-180 h-55 shadow-lg shadow-black/30"
+            />
+          </div>
+          <div
+            class="poster-p flex lg:text-2xl text-white mt-3 justify-center items-center gap-40 lg:gap-110"
+          >
+            <h3>Justin bieber</h3>
+            <button
+              class="border rounded-full pl-2 pr-2 lg:text-lg hover:text-yellow-500"
+            >
+              Listen Now
+            </button>
+          </div>
+          <div class="TopArtist relative">
+            <h1 class="text-gray-200 ml-12 text-2xl mt-3">Top Artist</h1>
+
+            <!-- Scroll Buttons -->
+            <button
+              id="prevArtist"
+              class="absolute left-2 top-28 -translate-y-1/2 z-10 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600"
+            >
+              &#10094;
+            </button>
+
+            <button
+              id="nextArtist"
+              class="absolute right-2 top-28 -translate-y-1/2 z-10 bg-gray-700 text-white p-2 rounded-full hover:bg-gray-600"
+            >
+              &#10095;
+            </button>
+
+            <!-- Scrollable Card Container -->
+            <div
+              id="artistContainer"
+              class="cards flex gap-6 ml-12 mt-3 overflow-x-hidden scroll-smooth pr-10"
+            >
+              <div
+                class="min-w-[120px] h-[140px] bg-gray-200 rounded-lg flex-shrink-0"
+              ></div>
+              <div
+                class="min-w-[120px] h-[140px] bg-gray-200 rounded-lg flex-shrink-0"
+              ></div>
+              <div
+                class="min-w-[120px] h-[140px] bg-gray-200 rounded-lg flex-shrink-0"
+              ></div>
+              <div
+                class="min-w-[120px] h-[140px] bg-gray-200 rounded-lg flex-shrink-0"
+              ></div>
+              <div
+                class="min-w-[120px] h-[140px] bg-gray-200 rounded-lg flex-shrink-0"
+              ></div>
+              <div
+                class="min-w-[120px] h-[140px] bg-gray-200 rounded-lg flex-shrink-0"
+              ></div>
+              <div
+                class="min-w-[120px] h-[140px] bg-gray-200 rounded-lg flex-shrink-0"
+              ></div>
+              <!-- Add more cards if needed -->
+            </div>
+          </div>
+        </div>
+        <div class="musicplayer hidden lg:block md:block pl-3">
+          <h3 class="text-gray-200 text-2xl mt-2">Now Playing</h3>
+          <div class="playingSong">
+            <img
+              src="/imgs/atif-aslam.jpg"
+              alt="atifaslam"
+              class="h-65 mt-2 ml-4 rounded-lg"
+            />
+            <h1 class="ml-23 mt-2 text-gray-200 text-2xl">Atif Aslam</h1>
+          </div>
+          <div class="soundbar">
+            <!-- Music Player Control Bar -->
+            <div
+              class="w-70 max-w-md ml-2 p-4 bg-gray-800 text-white rounded-lg shadow-md"
+            >
+              <!-- Progress bar with time -->
+              <div
+                class="flex items-center justify-between text-sm text-gray-300 mb-2"
+              >
+                <span id="currentTime">1:45</span>
+                <div
+                  class="flex-1 mx-2 h-1 bg-gray-600 rounded-full relative cursor-pointer"
+                  onclick="seek(event)"
+                >
+                  <div
+                    id="progressBar"
+                    class="absolute top-0 left-0 h-full bg-white rounded-full w-[45%]"
+                  ></div>
+                </div>
+                <span id="duration">3:50</span>
+              </div>
+
+              <!-- Controls -->
+              <div class="flex items-center justify-between mt-4 text-sm">
+                <!-- Shuffle -->
+                <button class="hover:text-gray-100">
+                  <i class="fas fa-random"></i>
+                </button>
+
+                <!-- Prev -->
+                <button class="hover:text-gray-100">
+                  <i class="fas fa-backward"></i>
+                </button>
+
+                <!-- Play/Pause -->
+                <button
+                  id="playPause"
+                  class="bg-white text-black p-3 rounded-full shadow hover:scale-105 transition-all"
+                >
+                  <i class="fas fa-pause"></i>
+                </button>
+
+                <!-- Next -->
+                <button class="hover:text-gray-100">
+                  <i class="fas fa-forward"></i>
+                </button>
+
+                <!-- Repeat -->
+                <button class="hover:text-gray-100">
+                  <i class="fas fa-redo"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
