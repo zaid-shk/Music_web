@@ -1,16 +1,37 @@
 @keyframes bar1 {
-  0%, 100% { height: 20%; }
-  50% { height: 100%; }
+
+  0%,
+  100% {
+    height: 20%;
+  }
+
+  50% {
+    height: 100%;
+  }
 }
 
 @keyframes bar2 {
-  0%, 100% { height: 40%; }
-  50% { height: 90%; }
+
+  0%,
+  100% {
+    height: 40%;
+  }
+
+  50% {
+    height: 90%;
+  }
 }
 
 @keyframes bar3 {
-  0%, 100% { height: 30%; }
-  50% { height: 80%; }
+
+  0%,
+  100% {
+    height: 30%;
+  }
+
+  50% {
+    height: 80%;
+  }
 }
 
 .animate-bar1 {
